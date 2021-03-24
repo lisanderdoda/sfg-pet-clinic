@@ -1,4 +1,4 @@
-package com.ld.springframework.sfgpetclinic.sfgpetclinic.model;
+package com.ld.springframework.sfgpetclinic.model;
 
 public class PetType {
 
