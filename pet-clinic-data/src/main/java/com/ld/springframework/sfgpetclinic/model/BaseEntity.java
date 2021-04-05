@@ -7,7 +7,6 @@ import lombok.Setter;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 @Getter
@@ -20,6 +19,9 @@ public class BaseEntity implements Serializable {
 
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
 
+    public boolean isNew(){
+        return this.id ==null;
+    }
 }
